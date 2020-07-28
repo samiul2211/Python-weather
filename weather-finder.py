@@ -57,6 +57,8 @@ def weather_finder():
     print("Welcome to The Average Annual Temperature for Each US State")
     user = input("What state do you want to know the Average Annual Temperature?:")
 
+    user = user.title()
+
     if user in weather:
         print("")
         print("The Average Annual Temperature " + user+" " + weather[user])
